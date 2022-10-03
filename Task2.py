@@ -12,4 +12,13 @@ def mix_list (my_list):
     for i in range(1, n + 1):
         my_list.append(random.randint(1, 10))
     return my_list
-print(mix_list(my_list))
+def multNumber(my_list):
+    count = (len(my_list) + 1) // 2
+    list2 = []
+    for i in range(count):
+        res = my_list[i] * my_list[-(i + 1)]
+        list2.append(res)
+    return list2
+
+print(f"Произведение пар чисел списка {mix_list(my_list)} => {multNumber(my_list)}")
+
