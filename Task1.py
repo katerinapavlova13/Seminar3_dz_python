@@ -5,9 +5,9 @@
 import random
 
 list = []
-n = int(input("Введите размер списка: "))
+number = int(input("Введите размер списка: "))
 def mix_list (list):
-    for i in range(1, n + 1):
+    for i in range(1, number + 1):
         list.append(random.randint(1, 10))
     return list
 
