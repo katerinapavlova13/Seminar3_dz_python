@@ -9,8 +9,9 @@ number = int(input("Введите десятичное число: "))
 number_toBinary = ""
 
 while number > 0:
-    number_toBinary = str(number % 2) + number_toBinary
+    number_toBinary += str(number % 2)
     number = number // 2
 
 
-print(f"В двоичной системе счисление  {number_toBinary}")
+
+print(f"В двоичной системе счисление: {number_toBinary}")

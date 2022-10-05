@@ -11,12 +11,8 @@ def Getfibonachi(number):
         list.insert(0, list[1] - list[0])
     return list
 
-list = Getfibonachi(10)
+list = Getfibonachi(8)
 print(f'Список чисел Негафибоначчи и Фибоначчи: {list}')
-
-
-
-
 
 
 
